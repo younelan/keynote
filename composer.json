@@ -1,0 +1,17 @@
+{
+    "name": "opensitez/knview",
+    "description": "PHP Keynote File Viewer",
+    "autoload": {
+        "psr-4": {
+            "Opensitez\\Knview\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "YounElan"
+        }
+    ],
+    "require": {
+        "henck/rtf-to-html": "^1.2"
+    }
+}

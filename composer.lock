@@ -1,0 +1,66 @@
+{
+    "_readme": [
+        "This file locks the dependencies of your project to a known state",
+        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
+        "This file is @generated automatically"
+    ],
+    "content-hash": "e2f2092ee69cfb56dbc13478e9f763ef",
+    "packages": [
+        {
+            "name": "henck/rtf-to-html",
+            "version": "1.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/henck/rtf-html-php.git",
+                "reference": "ff984a1d44fa359c85c0cffa0d66e991bf4dc967"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/henck/rtf-html-php/zipball/ff984a1d44fa359c85c0cffa0d66e991bf4dc967",
+                "reference": "ff984a1d44fa359c85c0cffa0d66e991bf4dc967",
+                "shasum": ""
+            },
+            "require": {
+                "ext-mbstring": "*"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "7"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "RtfHtmlPhp\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "GPL-2.0"
+            ],
+            "authors": [
+                {
+                    "name": "Alexander van Oostenrijk",
+                    "email": "alex.vanoostenrijk@gmail.com"
+                }
+            ],
+            "description": "RTF to HTML converter in PHP",
+            "keywords": [
+                "converter",
+                "rtf"
+            ],
+            "support": {
+                "issues": "https://github.com/henck/rtf-html-php/issues",
+                "source": "https://github.com/henck/rtf-html-php/tree/v1.2"
+            },
+            "time": "2021-09-10T15:19:14+00:00"
+        }
+    ],
+    "packages-dev": [],
+    "aliases": [],
+    "minimum-stability": "stable",
+    "stability-flags": {},
+    "prefer-stable": false,
+    "prefer-lowest": false,
+    "platform": {},
+    "platform-dev": {},
+    "plugin-api-version": "2.6.0"
+}
