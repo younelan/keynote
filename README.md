@@ -10,4 +10,8 @@ This PHP utility allows you to view .knt (Keynote) files in a web browser.
 
 ## Usage
 
-Open the index.php page in a browser; the script will detect .knt files in the `data` folder and display their contents. Use the left panel to navigate notes, and select “Sections” to view additional details.
+Open the index.php page in a browser; the script will detect 
+.knt files in the `data` folder and display their contents. 
+
+Use the left panel to navigate notes, and select “Sections” to 
+view additional details.
