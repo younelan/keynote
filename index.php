@@ -1,4 +1,5 @@
 <?php
+require_once 'vendor/autoload.php';
 require_once 'ParseKNT.php';
 
 // Directory to store .knt files
