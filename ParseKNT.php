@@ -1,4 +1,7 @@
 <?php
+//use RtfHtmlPhp\Document;
+require_once 'vendor/autoload.php';
+require_once 'rtf.php';
 class ParseKNT {
     public $sections = [];
     
@@ -108,9 +111,22 @@ class ParseKNT {
         }
     }
 }
-
-// Helper function for RTF to HTML conversion.
 function rtfToHtml($rtf, $convertEntities = true) {
+    $reader = new RtfReader();
+    $reader->Parse($rtf);
+    $formatter = new RtfHtml();
+    return $formatter->Format($reader->root);
+    //$rtf = file_get_contents("test.rtf"); 
+    //$document = new Document($rtf); // or use a string directly    
+
+    //use RtfHtmlPhp\Html\HtmlFormatter;
+    // $formatter = new \RtfHtmlPhp\Html\HtmlFormatter('UTF-8');
+    // //$formatter = new HtmlFormatter('UTF-8');
+    // echo $formatter->Format($document);
+    //exit;
+}
+// Helper function for RTF to HTML conversion.
+function customrtfToHtml($rtf, $convertEntities = true) {
     $html = $rtf;
     // Remove font table entirely (using recursive regex)
     $html = preg_replace('/\{\\\\fonttbl(?:(?>[^{}]+)|(?R))*\}/s', '', $html);
